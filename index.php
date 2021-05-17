@@ -2,7 +2,7 @@
 
 <!-- headerHome -->
 <header class="headerHome">
-    <article>
+    <article class="container">
         <h1>Vaše putovanje iz snova</h1>
         <p>Izaberite svoju avanturu</p>
         <button>Pretražite</button>
