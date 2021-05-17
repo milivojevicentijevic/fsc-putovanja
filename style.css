@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
 :root {
-    --darkGray: #292e33;
+    --darkGray: #292e33; /* rgb(41, 46, 51) */
     --white: #fff;
     --accents: #ff93cc;
     --transition: .3s ease;
@@ -17,6 +17,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    color: var(--darkGray);
 }
 .container {
     width: 80%;
@@ -44,13 +45,17 @@ button:hover {
     background-color: var(--white);
     color: var(--darkGray);
 }
+h2 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
 /**********************
 topbar
 **********************/
 .topbar {
     background-color: var(--darkGray);
     color: var(--white);
-    padding: 10px 0;
+    padding: 5px 0;
 }
 .topbar article {
     display: flex;
@@ -69,15 +74,17 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+    align-items: center;
 }
 nav ul {
     display: flex;
 }
 nav .logo {
     color: var(--accents);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-shadow: 1px 1px var(--darkGray);
+    line-height: 1.2;
 }
 nav .logo:hover {
     color: var(--darkGray);
@@ -88,6 +95,7 @@ nav ul li a {
     margin-left: 50px;
     font-weight: 700;
     text-transform: uppercase;
+
 }
 nav ul li a:hover {
     color: var(--accents);
@@ -151,7 +159,7 @@ aside {
 }
 aside ul {
     position: relative;
-    top: 35%;
+    top: 34%;
     background-color: var(--white);
     box-shadow: 0 0 5px var(--darkGray);
     padding: 4px 0;
@@ -180,8 +188,12 @@ aside li:nth-child(4) i {
 /**********************
 H O M E
 **********************/
+/**********************
+headerHome
+**********************/
 .headerHome {
     background-image: url(img/header.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(255, 255, 255, .1)), url(img/header.jpg);
     background-position: center;
     background-size: cover;
     height: 70vh;
@@ -202,3 +214,133 @@ H O M E
     opacity: .8;
     padding: 0 0 15px;
 }
+/**********************
+destinacije
+**********************/
+.destinacije {
+    padding: 80px 0;
+    text-align: center;
+}
+.destinacije h2 + p {
+    color: var(--white);
+    background-color: var(--accents);
+    padding: 3px 40px;
+    display: inline-block;
+    font-weight: 800;
+    text-shadow: 0 0 3px var(--darkGray);
+}
+.destinacije article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.destinacije article > div {
+    flex: 0 0 30%;
+    margin: 30px 0 50px;
+    box-shadow: 0 0 10px lightgray;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.destinacije article > div:hover {
+    box-shadow: 0 0 20px #b5b5b5;
+}
+.destinacije img {
+    width: 100%;
+}
+.destinacije .text {
+    padding-bottom: 5px;
+}
+.destinacije i {
+    color: var(--accents);
+    transition: var(--transition);
+}
+.destinacije i:hover {
+    color: var(--darkGray);
+}
+/**********************
+P O N U D A
+**********************/
+/**********************
+headerPonuda
+**********************/
+.headerPonuda {
+    background-image: linear-gradient(rgba(41, 46, 51,.65), rgba(41, 46, 51,.65) ), url(img/headers.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+    color: var(--white);
+}
+.headerPonuda h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 3px var(--darkGray);
+    line-height: 1.2;
+}
+.headerPonuda p {
+    font-size: 1.5rem;
+    opacity: .8;
+    padding: 0 0 15px;
+}
+/**********************
+paketi
+**********************/
+.paketi {
+    padding: 80px 0;
+    text-align: center;
+}
+.paketi h2 {
+    padding-bottom: 0;
+}
+.paketi h2 + p{
+    padding-bottom: 20px;
+}
+.paketi article {
+    display: flex;
+    height: 700px;
+    box-shadow: 0 0 10px lightgray;
+}
+.paketi article > div {
+    flex: 0 0 50%;
+    overflow: hidden;
+}
+.paketi img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 100%;
+    transition: var(--transition);
+}
+.paketi img:hover {
+    transform: scale(1.05);
+}
+.paketi article > div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+.paketi article div .row {
+    display: flex;
+    height: 350px;
+}
+.paketi article div .row div {
+    flex: 0 0 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.paketi article div .row .text {
+    padding: 30px;
+}
+.paketi h4 {
+    color: var(--accents);
+    font-size: 1.5em;
+    text-shadow: 0 0 1px var(--darkGray);
+}
+
