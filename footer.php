@@ -19,7 +19,7 @@
                 <h3>Novosti</h3>
                 <p>Popust na rane prijave</p>
                 <input type="email" placeholder="Email">
-                <input type="submit" value="Posalji">
+                <button>Pošalji</button>
             </div>
         </article>
     </footer>

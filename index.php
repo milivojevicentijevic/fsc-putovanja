@@ -1,5 +1,12 @@
 <?php include 'header.php'; ?>
 
-<h1 style="font-size: 10rem; text-align: center;">Home</h1>
+<!-- headerHome -->
+<header class="headerHome">
+    <article>
+        <h1>Vaše putovanje iz snova</h1>
+        <p>Izaberite svoju avanturu</p>
+        <button>Pretražite</button>
+    </article>
+</header>
 
 <?php include 'footer.php'; ?>

@@ -28,3 +28,12 @@
             <li><a href="ponuda.php">Ponuda</a></li>
         </ul>
     </nav>
+    <!-- aside -->
+    <aside>
+        <ul>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-youtube-square"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-pinterest"></i></li>
+        </ul>
+    </aside>
