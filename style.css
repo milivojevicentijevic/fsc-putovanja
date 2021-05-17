@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
+:root {
+    --darkGray: #292e33;
+    --white: #fff;
+    --accents: #ff93cc;
+    --transition: .3s ease;
+}
+/**********************
+basic styles
+**********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+/**********************
+topbar
+**********************/
+.topbar {
+    background-color: var(--darkGray);
+    color: var(--white);
+    padding: 10px 0;
+}
+.topbar article {
+    display: flex;
+    justify-content: space-between;
+}
+.topbar i {
+    color: var(--accents);
+}
+.topbar a {
+    margin-left: 20px;
+}
+/**********************
+nav
+**********************/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+nav ul {
+    display: flex;
+}
+nav .logo {
+    color: var(--accents);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px var(--darkGray);
+}
+nav .logo:hover {
+    color: var(--darkGray);
+    text-shadow: 1px 1px var(--accents);
+}
+nav ul li a {
+    color: var(--darkGray);
+    margin-left: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: var(--accents);
+}
+/**********************
+footer
+**********************/
+footer {
+    padding: 100px 0;
+    background-color: var(--darkGray);
+    color: var(--white);
+}
+footer article {
+    display: flex;
+    justify-content: space-between;
+}
+footer h3 {
+    color: var(--accents);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+footer div:nth-child(1) {
+    flex: 0 0 39%;
+}
+footer div:nth-child(2) {
+    flex: 0 0 19%;
+}
+footer div:nth-child(3) {
+    flex: 0 0 39%;
+}
+footer a {
+    color: var(--white);
+}
+footer a:hover {
+    color: var(--accents);
+}
+footer input[type="email"] {
+
+}
+footer input[type="submit"] {
+    
+}
